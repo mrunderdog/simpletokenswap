@@ -1,0 +1,343 @@
+/* 여기에 스타일을 추가할 수 있습니다 */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: none; /* 전체 너비를 사용하도록 변경 */
+  margin: 0; /* 마진 제거 */
+  padding: 0; /* 패딩 제거 */
+  background-color: transparent; /* 배경색 제거 */
+  box-shadow: none; /* 그림자 제거 */
+  border-radius: 0; /* 모서리 둥글기 제거 */
+  margin-top: 0; /* 상단 마진 제거 */
+}
+
+h1 {
+  color: #F4B12E;  /* gKIP Token Exchange 텍스트 색상 변경 */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #202124;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #F4B12E;  /* 버튼 배경색 변경 */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #E5A41D;  /* 호버 시 약간 어두운 색상 */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.wallet-info {
+  background-color: #F3DEB3;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.exchange-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exchange-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.swap-box {
+  background-color: #f7f8fa;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.token-input {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.token-select select {
+  background-color: #edeef2;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.token-input input {
+  flex-grow: 1;
+  border: none;
+  font-size: 18px;
+  text-align: right;
+}
+
+.max-button {
+  background-color: #edeef2;
+  color: #5090ea;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.balance {
+  text-align: right;
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.swap-icon {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.swap-button {
+  width: 100%;
+  background-color: #F4B12E;  /* Swap 버튼 배경색 변경 */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.swap-button:hover {
+  background-color: #E5A41D;  /* 호버 시 약간 어두운 색상 */
+}
+
+.swap-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #d93025;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.max-button {
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.amount-input {
+  flex-grow: 1;
+}
+
+.exchange-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .App {
+    max-width: 95%;
+    margin-top: 20px;
+  }
+
+  .exchange-container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .wallet-info {
+    padding: 10px;
+  }
+
+  .token-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .token-select select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .token-input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .max-button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .swap-button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .exchange-container {
+    padding: 10px;
+  }
+
+  .token-input input {
+    font-size: 16px;
+  }
+
+  .swap-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+.App-header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: black;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.wallet-button, .placeholder {
+  width: 200px; /* Adjust as needed */
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+.connect-wallet-button {
+  background-color: #F4B12E;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.connect-wallet-button:hover {
+  background-color: #E5A41D;
+}
+
+/* 기존 스타일은 그대로 유지 */
+
+.wallet-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.wallet-address-button {
+  background-color: #f4b12e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: default;
+}
+
+.disconnect-button {
+  background-color: #F5CE80;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.disconnect-button:hover {
+  background-color: #f4b12e;
+}
+
+.switch-network-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.switch-network-button:hover {
+  background-color: #2980b9;
+}

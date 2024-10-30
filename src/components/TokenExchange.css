@@ -1,0 +1,92 @@
+.exchange-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .swap-box {
+    margin-bottom: 20px;
+  }
+  
+  .token-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .token-select {
+    margin-right: 10px;
+  }
+  
+  .max-button {
+    margin-left: 10px;
+  }
+  
+  .balance {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  .swap-icon {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .swap-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .swap-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .loader {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .transaction-history {
+    margin-top: 20px;
+  }
+  
+  .transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .transaction-history li {
+    margin-bottom: 10px;
+  }
+  
+  .transaction-history a {
+    margin-left: 10px;
+    color: #4CAF50;
+  }
+  
+  @media (max-width: 600px) {
+    .exchange-container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .swap-button {
+      font-size: 14px;
+    }
+  }
